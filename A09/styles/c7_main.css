@@ -17,6 +17,62 @@ body {
 a:focus, a:hover {
 	font-style: italic;
 }
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	position: relative;
+}
+ nav ul li{
+	float: left;
+	 position: relative;
+}
+ nav ul li a{
+	 display: block;
+	 width: 160px;
+	 text-align: center;
+	 font-weight: bold;
+	 color: white;
+	 padding: 1em 0;
+	 background-color: #800000;
+	 text-decoration: none;
+ }
+
+nav ul li ul.submenu{
+	display: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	background-color: #800000;
+	padding: 0;
+
+
+}
+nav ul li ul.submenu li {
+	float: none;
+	width: 160px;
+
+}
+
+nav ul li ul.submenu li a{
+	padding: 0.5em;
+	text-align: left;
+	display: block;
+	color: white;
+	text-decoration: none;
+}
+
+nav ul li:hover ul.submenu{
+	display: block;
+}
+nav ul::after{
+	content: "";
+	display: block;
+	clear: both;
+
+}
+
 /* the styles for the header */
 header {
 	padding: 1.5em 0 2em 0;
